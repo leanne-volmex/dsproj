@@ -81,7 +81,7 @@ int main(int, char *[]) {
     // If the file cannot be found, an exception will be thrown.
     // If the DataFrame root directory is your current directory when running this, it should work fine.
     //
-    ibm_df.read("data/IBM.csv", io_format::csv2);
+    ibm_df.read("/home/leanne/work/dsproj/DataFrame/data/IBM.csv", io_format::csv2);
 
     // To access a column, you must know its name (or index) and its type
     //
@@ -179,8 +179,8 @@ int main(int, char *[]) {
     // The data for these two stocks start and end at different dates.
     // But there is overlapping data between them
     //
-    dt_ibm.read("data/DT_IBM.csv", io_format::csv2);
-    dt_aapl.read("data/DT_AAPL.csv", io_format::csv2);
+    dt_ibm.read("/home/leanne/work/dsproj/DataFrame/data/DT_IBM.csv", io_format::csv2);
+    dt_aapl.read("/home/leanne/work/dsproj/DataFrame/data/DT_AAPL.csv", io_format::csv2);
 
     // Now we join the AAPL and IBM DataFrames using their indices and applying inner-join policy
     //
