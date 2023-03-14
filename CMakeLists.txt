@@ -16,7 +16,7 @@ enable_testing()
 # FetchContent_MakeAvailable(dataframe)
 add_subdirectory(DataFrame)
 include_directories(DataFrame/include)
-set(SOURCES main.cpp)
+set(SOURCES df_perf.cpp)
 add_executable(dsproj ${SOURCES})
 
 # hmdf_target_data_files(dsproj
